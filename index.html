@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile Card - Hauwa Abdulazeez</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main role="main" class="page-wrap">
+    <article data-testid="test-profile-card" class="profile-card" aria-labelledby="profile-heading">
+      <figure class="avatar" aria-hidden="false" data-testid="test-user-avatar-figure">
+        <img
+          src="./Images/profileImage.jpeg"
+          alt="Hauwa Abdulazeez — profile photo"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="profile-details">
+        <header class="profile-header">
+          <h2 id="profile-heading" data-testid="test-user-name">Hauwa Abdulazeez</h2>
+          <p class="subtext" data-testid="test-user-bio">
+            UI/UX Designer & Frontend Developer crafting elegant, accessible interfaces and delightful user experiences.
+          </p>
+        </header>
+
+        <p class="time subtext" aria-live="polite">
+          Current Time (ms):
+          <span data-testid="test-user-time" id="time-ms">-</span>
+        </p>
+
+        <nav class="social-nav" aria-label="Social links">
+          <ul data-testid="test-user-social-links" class="social-links">
+            <li>
+              <a data-testid="test-user-social-twitter" class="icon-link" href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                
+                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="img">
+                  <path fill="currentColor" d="M23 4.5c-.7.3-1.5.5-2.3.6.8-.5 1.4-1.2 1.7-2.1-.7.4-1.6.7-2.5.9C19.1 3 18 2.5 16.8 2.5c-2 0-3.6 1.6-3.6 3.6 0 .3 0 .7.1 1C9.6 7.1 6.4 5.5 4 3.1c-.4.6-.7 1.4-.7 2.2 0 1.5.8 2.8 2.1 3.6-.6 0-1.2-.2-1.7-.5v.1c0 2.1 1.5 3.8 3.5 4.2-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 1.9 2.3 3.2 4.3 3.2-1.6 1.2-3.6 1.9-5.8 1.9-.4 0-.8 0-1.2-.1 2 1.3 4.3 2 6.8 2 8.2 0 12.8-6.8 12.8-12.8v-.6c.9-.6 1.6-1.4 2.1-2.3-.8.4-1.6.7-2.5.9z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a data-testid="test-user-social-linkedin" class="icon-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            
+                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="img">
+                  <path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5V24H0V8zm7.5 0h4.8v2.2h.1c.7-1.2 2.5-2.4 5.2-2.4 5.6 0 6.6 3.7 6.6 8.6V24h-5V15.5c0-2.0 0-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24h-5V8z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a data-testid="test-user-social-github" class="icon-link" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                
+                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="img">
+                  <path fill="currentColor" d="M12 .5C5.7.5.9 5.4.9 11.7c0 4.8 3.1 8.9 7.4 10.3.5.1.7-.2.7-.5v-1.8c-3 .6-3.6-1.2-3.6-1.2-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 .1 1.7.7 2.1 1.1.1-.8.4-1.4.8-1.8-2.4-.3-5-1.2-5-5.4 0-1.2.4-2.1 1.1-2.9-.1-.3-.5-1.6.1-3.4 0 0 .9-.3 3 .9.9-.3 1.9-.4 2.9-.4 1 0 2 .1 2.9.4 2.1-1.2 3-.9 3-.9.6 1.8.2 3.1.1 3.4.7.8 1.1 1.7 1.1 2.9 0 4.3-2.7 5.1-5 5.4.4.3.7.9.7 1.8v2.6c0 .3.2.6.7.5 4.3-1.4 7.4-5.6 7.4-10.3C23.1 5.4 18.3.5 12 .5z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="lists-container" aria-label="Hobbies and dislikes">
+          
+          <div class="list-block" data-testid="test-user-hobbies-block">
+            <h3 class="list-title" data-testid="test-user-hobbies-title">Hobbies</h3>
+            <ul data-testid="test-user-hobbies" class="list-items">
+              <li data-testid="test-user-hobby-1" class="pill">Designing</li>
+              <li data-testid="test-user-hobby-2" class="pill">Reading</li>
+            </ul>
+          </div>
+
+          
+          <div class="list-block" data-testid="test-user-dislikes-block">
+            <h3 class="list-title" data-testid="test-user-dislikes-title">Dislikes</h3>
+            <ul data-testid="test-user-dislikes" class="list-items">
+              <li data-testid="test-user-dislike-1" class="pill">Procrastination</li>
+              <li data-testid="test-user-dislike-3" class="pill">Low contrast</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
