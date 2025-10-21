@@ -16,19 +16,69 @@
 
 
 body {
+  width: 100%;
   margin: 0;
   min-height: 100vh;
   font-family: "Playfair Display", serif;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
   background: linear-gradient(270deg, #121012, #201427, #0f2330);
   background-size: 600% 600%;
   animation: bgShift 12s ease infinite;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.site-header{
+  width: 100%;
+  background: linear-gradient(270deg, #121012, #201427, #0f2330);
+  backdrop-filter: blur(4px);
+  padding: 1rem 2rem;
+  position:sticky;
+  top:0;
+  z-index:40;
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--gap);
+}
+
+.site-logo{
+  display:inline-flex;
+  align-items:center;
+  gap: 5rem;
+  color:var(--accent);
+}
+
+.site-logo svg{
+  display:block
+}
+
+.header-nav{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  justify-content:flex-end;
+  font-weight:500;
+}
+
+.header-nav .nav-link{
+  color:var(--accent);
+  text-decoration:none;
+  padding:.45rem .7rem;
+  border-radius:8px;
+  transition:all .15s ease;
+  font-size:0.95rem;
+}
+
+.header-nav .nav-link:hover,
+.header-nav .nav-link:focus{
+  background:rgba(37,99,235,0.08);
+  color:var(--accent-2);
+  outline:none;
+  transform:translateY(-1px);
 }
 
 @keyframes bgShift {
@@ -39,10 +89,11 @@ body {
 
 
 .page-wrap {
-    width: 100%; 
-    display:flex; 
-    align-items:center; 
-    justify-content:center; 
+  width: 100%; 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  padding-top: 3rem;
 }
 
 .profile-card {
@@ -226,6 +277,37 @@ body {
   color: #fff;
   transform: translateY(-3px);
   background: rgba(255,255,255,0.03);
+}
+
+.footer-links {
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.social-link {
+  color: var(--accent);
+  transition: color 0.2s ease;
+  padding: 0.5rem;
+}
+
+.social-link:hover {
+  color: var(--accent-2);
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  margin-top: 3rem;
+  color: var(--muted);
+}
+
+.copyright {
+  font-size: 0.9rem;
 }
 
 @media (max-width: 480px) {

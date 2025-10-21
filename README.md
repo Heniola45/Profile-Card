@@ -14,5 +14,5 @@ A responsive, accessible profile card built with plain HTML, CSS, and vanilla JS
 2. Open `index.html` in your browser
 
 ## 🚀 Live Demo
-[Your Netlify or GitHub Pages link here]
+https://heniola45.github.io/Profile-Card/
 
